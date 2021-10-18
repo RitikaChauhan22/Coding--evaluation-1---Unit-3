@@ -1,0 +1,185 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway',sans-serif;
+*/
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+:root{
+    --heading:'Montserrat',sans-serif;
+}
+body{
+    font-family:'Raleway',sans-serif;
+    background: #fff;
+}
+
+img {
+    width: 100px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+hr{
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background:#252525;
+    color: #fff;
+    padding: 20px 30px;
+}
+.top .fas{
+    font-size:2rem;
+    cursor: pointer;
+}
+.times-btn{
+    display: none;
+}
+
+.nav-bar{
+    background: #333;
+    height: 0;
+    overflow: hidden;
+}
+
+.show-nav{
+    height: auto;
+}
+.nav-bar ul li{
+    text-align: center;
+    display: block;
+    padding: 15px 0;
+    transition: all is ease-in-out;
+}
+
+.nav-bar ul li:hover{
+    background: #0e0e0e;
+}
+
+.nav-bar ul li a {
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.nav-bar ul li a:hover{
+    text-decoration: underline;
+}
+.social-icons{
+    display: none;
+}
+
+.banner{
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 30px 0;
+    margin-top: 8px;
+}
+
+.banner-main-content{
+    padding: 0 2 rem;
+    line-height: 1.7;
+}
+
+.banner-main-content h2{
+    font-size: 2rem;
+    font-family: var(--heading);
+}
+
+.banner-main-content button{
+    border: none;
+    background: #252525;
+    padding: 14px 18px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 1s ease;
+
+}
+@media(min-width: 800px) {
+    .ham-btn, .times-btn{
+        display: none !important;
+    }
+    .navi{
+        display: flex;
+        background: #252525;
+        align-items: centre;
+        flex-wrap: wrap;
+    }
+    .top{
+        flex: 0 0 15%;
+    }
+    .nav-bar{
+        flex: 1 0 auto;
+        height: 100%;
+        background: transparent;
+    }
+    .nav-bar nav ul{
+display: flex;
+justify-content: center;
+    }
+
+    .nav-bar nav ul li{
+
+    padding: 30px;
+    }
+}
+
+.top{
+    flex: 0 0 15%;
+}
+
+.nav-bar{
+    flex: 1 0 auto;
+    height: 100%;
+    background: transparent;
+}
+
+.banner-main-content button a{
+ color:#f3f3f3;
+ transition: color 1s ease;
+}
+
+.button-main-content button:hover{
+    background: #fff;
+}
+
+.banner-main-content button:hover a{
+    color: #0d0a0b;
+}
+.current-news{
+    background: #fff;
+    padding: 6px;
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.current-news h3{
+    padding: 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+.current-news h3:hover::before{
+    content: ">> ";
+    position: absolute;
+    left: -12px;
+}
+
+.current-news span{
+    display: block;
+    font-family: var(--heading);
+    font-weight:300;
+    text-transform: uppercase;
+}
